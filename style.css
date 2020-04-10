@@ -15,6 +15,9 @@ hr{
 strong{
     color : #BAA456;
 }
+#exp strong{
+    color : #847445;
+}
 h3{
     text-align: center;
 }
@@ -32,7 +35,7 @@ h2{
 .header {
   padding: 1px;
   text-align: center;
-  background: #1abc9c;
+  background: #333;
   background-image:url(Image/head.jpg);
   background-size:cover;
     background-position: 50% 25%;
@@ -191,7 +194,7 @@ h2{
 }
 #propos p{
     background-color: #3B5770;
-    border-radius:20px 20px;
+    border-radius:20px;
     padding : 5px;
     line-height: 1.3em;
 }
@@ -245,11 +248,16 @@ h2{
     display:flex;
     flex-direction: column;
 }
+#exp .logo{
+    margin:0px;
+}
+
 details{
     border:0px solid #333;
     width:90%;
     margin:auto;
     margin-bottom:20px;
+    border-radius: 20px 20px;
 }
 summary{
     padding:5px;
@@ -264,22 +272,27 @@ summary{
 summary:hover{
     background-color: #BAA456;
 }
-
+.pp{
+    background : #99A0E7;
+    border-radius: 20px;
+    padding:5px;
+    border : 2px solid #BAA456 ;
+}
+#prog{
+    background: linear-gradient(to right,#FFFFFF 15%, #D6AAAA);
+}
 #prog article{
-    background-color: #3B5770;
-    border:3px solid #BAA456;
-    border-radius:20px 20px;
-    margin:auto;
-    margin-top:10px;
-    padding : 5px;
-    line-height: 1.3em;
-    text-align: center;
-    width:70%;
-    
+    width:95%;
+    line-height: 1.5em;
+    border-left : 5px double #558697;
+    padding-left : 10px;
+}
+#prog p:first-child{
+    text-align: center
 }
 /*------SLIDER--------*/
 #screen{
-    background-color: #55657B;
+    background-color: #333;
     width:290px;
     height:230px;
     margin:auto;
@@ -301,7 +314,7 @@ summary:hover{
     display: flex;
     max-height: 100%;
     animation-name: slide;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
@@ -334,29 +347,35 @@ summary:hover{
     
 }
 
-#asen article{
-    width:80%;
-    margin : auto;
-    line-height: 1.5em;
-    border-left : 10px double #558697;
+#asen{
+    background: linear-gradient(to right,#FFFFFF 15%, #FFDB7B);
 }
-
-#lab > div{
-    width : 75%;
-    margin:auto;
+#asen article{
+    width:95%;
     line-height: 1.5em;
     border-left : 5px double #558697;
+    padding-left : 10px;
+}
+#lab{
+    background: linear-gradient(to right,#FFFFFF 15%, #7CCCFF);
+}
+#lab > div{
+    width : 95%;
+    line-height: 1.5em;
+    border-left : 5px double #558697;
+    margin-right:10px;
 }
 #lab p{
-    margin-left:120px;
+    margin-left:10px;
+    
 }
 button{
-    width:100px;
+    width:33%;
     height:50px;
     border-radius: 20px 20px;
-    margin-left:40px;
     background-color: #558697;
     font-size: 1em;
+    margin-left : 33%;
 }
 button:hover{
     background-color: #BAA456;
