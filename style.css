@@ -130,7 +130,9 @@ h1{
 /*  -----  SIDE  ------ */
 .side {
   flex: 29%;
-  background-color: #8f8f8f;
+    background-color: #8f8f8f;
+    background: linear-gradient(to right,#333 0%, #8f8f8f 2%, #8f8f8f 98%, #333 100%);
+    
   padding: 10px;
     padding-top : 5px;
     display : flex;
@@ -142,11 +144,8 @@ h1{
     position : sticky;
     top : 40px;
     display : flex;
-    background-color:#8f8f8f;
-    z-index: 3;
+    /*background-color:#8f8f8f;*/
     justify-content: space-around;
-    align-content: space-between;
-    border-top: 2px solid #BAA456;
     border-bottom: 2px solid #BAA456;
     
 }
@@ -188,9 +187,11 @@ h1{
     background-color: #3B5770;
     border-radius:20px 20px;
     padding : 5px;
-    line-height: 1.2em;
+    line-height: 1.1em;
     max-width: 220px;
     text-align: center;
+    margin: auto;
+    margin-top:5px;
 }
 /* Colonne principale */
 .main {
@@ -498,6 +499,7 @@ button:hover{
     .side{
         position:relative;
         border-right: 0px;
+        background: #8f8f8f
     }
     #portrait{
         position: relative;
