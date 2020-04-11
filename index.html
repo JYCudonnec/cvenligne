@@ -1,122 +1,240 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-<title>CV responsive</title>
+<title>CV Jean-Yves Cudonnec</title>
 <meta charset="UTF-8">
 <link rel = "stylesheet" href = "style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
-
-<div class="header">
-  <h1>Jean-Yves CUDONNEC</h1>
-  <p>Développeur Web</p><br><br><br>
+    <div class="header">
+      <h1>Jean-Yves CUDONNEC</h1>
+      <p>Développeur Web</p><br><br><br>
+    </div>
+    <!-- Barre de navigation -->
+    <div class="navbar">
+      <a href="#form"><img src="Image/Icon/iconform.png" height=20> <span class="navtxt">Formation</span></a>
+      <a href="#xp"><img src="Image/Icon/iconexp.png" height=30><span class="navtxt">Expériences professionnelles</span></a>
+      <a href="#atout"><img src="Image/Icon/iconatout.png" height=20><span class="navtxt">Atouts</span></a>
+      <a href="#hob"><img src="Image/Icon/coeur.png" height=20><span class="navtxt">Centres d'intérêt</span></a>
+    </div>
+    <div class="menu">
+        <button class="menubutt">Menu</button>
+        <div class="liens">
+            <a href="#form">Formation</a>
+            <a href="#xp">Expériences professionnelles</a>
+            <a href="#atout">Atouts</a>
+            <a href="#hob">Centres d'intérets</a>
+    </div>
 </div>
-
-<!-- Barre de navigation -->
-<div class="navbar">
-  <a href="#forma"><img src="Icon/iconform.png" height=20> <span class="navtxt">Formation</span></a>
-  <a href="#exp"><img src="Icon/iconexp.png" height=30><span class="navtxt">Expériences professionnelles</span></a>
-  <a href="#atouts"><img src="Icon/iconatout.png" height=20><span class="navtxt">Atouts</span></a>
-  <a href="#hobbies"><img src="Icon/coeur.png" height=20><span class="navtxt">Centres d'intérêt</span></a>
-</div>
-
-<!-- Contenu flexible -->
-<div class="row">
-  <div class="side">
-    <h3>A propos de moi</h3>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Texte de description/profil rapide,<br/> ce que je fais,<br/> ce que je cherche,<br/> ce que je peux apporter</p><hr>
-    <h3>Informations :</h3>
-    <p>né le 19 mars 1986<br/><br/>
-      Adresse :<br/>
-      32 route de Lannion<br>
-      22560 - TREBEURDEN<br/><br/>
-      Telephone :<br/>
-      06 03 96 82 50<br/><br/>
-      Mail :<br/>
-      jycudonnec@gmail.com<br/></p><hr>
     
-  </div>
-  <div class="main">
-      <h2 id="forma">Formation</h2>
-                <div class = "forma">
-                <div class = "sec-gauche" id = "forma-gauche">
-                    <br/><img src="Logo/IUT.jpg" height=50px width=50px alt="logo IUT de lannion"/><br><br>
-                    <img src="Logo/OC.png" height=50px width=50px alt="logo IUT de lannion"/><br><br>
-                    <img src="Logo/Cnam.png" alt="logo CNAM"/><br>
-                    <img src="Logo/UCO.png" alt="logo UCO"/><br>
-                    <img src="Logo/UBO.jpg" alt="logo UBO"/><br><br>
-                    <img src="Logo/Felix.jpg" alt="logo Felic Le Dantec"/>
-                </div>
-                <div class = "sec-droite">
-                    <p><span class = "titre"><a href="http://www.iut-lannion.fr/">IUT de Lannion</a></span><br/>Diplôme Universitaire Développeur Web<br/><em>2020 - aujourd'hui</em></p>
-                    <p><span class = "titre"><a href="https://openclassrooms.com/fr/">Open Classroom</a></span><br/>Tutoriels Java, Python, Lua...<br/><em>2018 - aujourd'hui</em></p>
-                    <p><span class = "titre"><a href="https://www.cnam-bretagne.fr/?gclid=EAIaIQobChMIuq6FmOuD6AIVVPhRCh23mAYiEAAYASAAEgL4MfD_BwE">Conservatoire National des Arts et Métiers (CNAM)</a></span><br/>Ingénieur en Biologie (non validé)<br/><em>2012 - 2015</em></p>
-                    <p><span class = "titre"><a href="https://guingamp.uco.fr/fr">Université Catholique de l'Ouest (UCO) - Guingamp</a></span><br/>Lience de biologie, Parcours Biologie Cellulaire et Physiologie<br/><em>2006-2009</em></p>
-                    <p><span class = "titre"><a href="https://www.univ-brest.fr/medecine/">Faculté de Médecine de Brest</a></span><br/>Premier Cycle Elémentaire de médecine<br/><em>2004 - 2006</em></p>
-                    <p id="exp"><span class = "titre"><a href="http://lycee-ledantec.fr/">Lycée Félix LeDantec - Lannion</a></span><br/>Bac S option maths, mention AB<br/><em>2004</em></p><br/>
-                </div>
+    <!-- Contenu flexible -->
+    <div class="row">
+      <div class="side">
+          
+            <div id="portrait">
+            <img src="Image/Portrait.png" alt="Portrait" title="moi" width="200px" height="200px"/>
             </div>
-    <hr>
-    <h2 id="exp">Expériences professionnelles</h2>
-   <div class = "exp">
-                <details class="elem" closed="open" >
-                <summary>Travaux personnels : développement d'applications mobiles - 2019</summary>
-                <img class="logoexp" src="Logo/logopavie.jpg"/>
-                    <div class="txtexp">
-                    Initiation à la programmation et aux PixelArt, développement en autodidacte d'applications mobiles et tactiles, en Lua.<br>
-                        <p id="jdlv">Jeu de la Vie</p>
-                        <p id="space">Space invader</p>
-                        <p id="p4">Puissance Cat</p>
-                        <p id="retro">Jeu retro</p>
-                    </div><hr></details><br/>
-                <details class="elem" closed="open" style="background-image: url(Image/Asen.jpg); background-size:cover;">
-                <summary>Assistant d'éducation 2012 - 2018</summary>
-                <img class="logoexp" src="Logo/logopavie.jpg"/>
-                    <div class="txtexp">
-                    <ul><li>Accueillir et veiller à la bonne intégration des élèves du lycée.</li>
-                    <li>Encadrement des élèves sur le temps scolaire, lors des sorties, et en internat, surveillance des devoirs.</li>
-                    <li>Assurer le lien entre l'équipe pédagogique, les élèves, et les parents d'élèves.</li>
-                    <li>Connaître et faire respecter le rêglement intérieur.</li>
-                    <li>Veiller à l'assiduité des élèves, gérer les conflits, maintenir la discipline.</li>
-                    <li>Secrétaire de jurys de bac, et des éuinion de l'équipe de Vie Scolaire.</li>
-                    <li>En internat, aide aux devoirs, animation d'activités, rappels des règles de vie en communauté...</li></ul>
-                    </div><hr></details><br/>
-                <details class="elem" closed="open" style="background-image: url(Image/biochimie.jpg); background-size:cover;">
-                <summary id="atouts">Chargé de recherche - Technicien de Laboratoire</summary>
-                <img class="logoexp" src="Logo/UCO.png" alt="logo UCO"/>
-                <div class="txtexp"><br/>2008 - 2009 (5 mois)<br/>Elaboration d'un protocole d'analyse génétique des parasites de la coque <em>Cerastoderma Edule</em>.<br/>+ de détails<br/><br/></div><hr>
-                <img class="logoexp" src="Logo/LOGOmorvan.jpg" alt="logo CHRU Morvan"/>
-                <div class="txtexp"><br/>2008 (1 mois)<br/>Stage en génie génétique : étude de la conformation de protéines membranaires impliquées dans certaines lymphopathies myéloïdes.<br/>+ de détails</div><br/><hr>
-                <img class="logoexp" src="Logo/logoPLD.png" alt="logo CH Lannion"/>
-                <div class="txtexp">2007 (2 semaines)<br/>Stage analyse biomédicale : réalisation des différentes techniques pratiquées en laboratoire d'analyse médicale : numération et formule sanguine, antibiogramme, ELISA...<br/><br/></div><hr></details><br/>
-                <details class="elem" closed="open">
-                <summary>Expériences diverses dans le domaine de la santé</summary>
-                <div class="txtexp">Ambulancier, préparateur en pharmacie, agent de service hospitalier...</div></details><br/>
-            </div><br>
-     <div class = "atouts"><br><hr>
-                <h2 id="atouts">Atouts</h2>
-                <label for="file">Anglais:</label><progress id="file" max="100" value="90">90%</progress><br/>
-                <label for="file">Allemand:</label><progress id="file" max="100" value="50">50%</progress><br/><br/>
-                <label for="file">HTML:</label><progress id="file" max="100" value="80">80%</progress><br/>
-                <label for="file">CSS:</label><progress id="file" max="100" value="70">70%</progress><br/>
-                <label for="file">JavaScript:</label><progress id="file" max="100" value="10">10%</progress><br/>
-                <label for="file">PHP:</label><progress id="file" max="100" value="10">10%</progress><br/>
-                <label for="file">Lua:</label><progress id="file" max="100" value="80">80%</progress><br/>
+            <div id="info">
+            <h3>Jean-Yves CUDONNEC</h3>
+            <p>Né le 19 mars 1986<br><br>
+              Adresse :<br>
+              32 route de Lannion<br>
+              22560 - TREBEURDEN<br><br>
+              Telephone :<br>
+              06 03 96 82 05<br><br>
+              Mail :<br>
+              <a href="mailto:jycudonnec@gmail.com">jycudonnec@gmail.com</a><br><br>
+              Permis B + véhicule</p>
+            <hr>
             </div>
-    <br>
-    
-    <div class="hobbies"><br/><hr>
-        <h2 id="hobbies">Centres d'intérêt</h2>
+            
       </div>
-  </div>
-</div>
+      <div class="main">
+            <div id="propos"><hr>
+                <h3>A propos de moi</h3>
+                <article>
+                    <p>Sérieux, organisé, et curieux de tout</p>
+                    <p>De <strong>profil scientifique</strong>, initialement orienté vers le biomédical, je suis désormais en formation de Développeur Web à l'IUT de Lannion.</p>
+                    <p>De par mes études  et  mes expériences professionnelles, je dispose de connaissances approfondies en <strong>physiologie, biologie cellulaire et moléculaire</strong>.</p>
+                    <p>Au cours de mes études, j'ai eu l'occasion de travailler en tant qu'<strong>assistant d'éducation</strong>, métier auquel je me suis beaucoup attaché et que j'ai exercé 6 ans.</p>
+                    <p>Après un parcours aussi hétérogène qu'enrichissant, et quelques experiences autodidactes concluantes dans la <strong>programmation</strong>, j'ai décidé de me lancer dans une formation de qualité à l'IUT de Lannion, le <strong>Diplome Universitaire de Developpeur Web</strong>.</p>
+                    <p>C'est dans ce cadre que je suis actuellement à la recherche d'un <strong>stage</strong>, voire d'une <strong>alternance</strong>, afin de faire de ma passion, mon métier.</p>
+                    <p>J'espère avoir l'occasion de faire profiter votre équipe de mon <strong>dynamisme</strong> et de mes expériences diverses et variées.</p></article><br>
+                <hr id="form">
+            </div>
+            <div id = "forma">
+                <h2>Formation</h2>
+                <div id="iut">
+                    <div class="logo"><img src="Image/Logo/IUT.jpg" height=50px width=50px alt="logo IUT de lannion"/></div>
+                    <p><a href="http://www.iut-lannion.fr/">IUT de Lannion</a><br/>Diplôme Universitaire de Développeur Web<br/><em>2020 - aujourd'hui</em></p>
+                </div>
+                <div id="oc">
+                    <div class="logo"><img src="Image/Logo/OC.png" height=50px width=50px alt="logo Open Classroom"/></div>
+                    <p><a href="https://openclassrooms.com/fr/">Open Classroom</a><br/>Tutoriels Java, Python, Lua...<br/><em>2018 - aujourd'hui</em></p>
+                </div>
+                <div id="cnam">
+                    <div class="logo"><img src="Image/Logo/Cnam.png" alt="logo CNAM"/></div>
+                    <p><a href="https://www.cnam-bretagne.fr/?gclid=EAIaIQobChMIuq6FmOuD6AIVVPhRCh23mAYiEAAYASAAEgL4MfD_BwE">Conservatoire National des Arts et Métiers (CNAM)</a><br/>Ingénieur en Biologie (non validé)<br/><em>2012 - 2015</em></p>
+                </div>
+                <div id="uco">
+                    <div class="logo"><img src="Image/Logo/UCO.png" style="margin-top:-20px" alt="logo UCO"/></div>
+                    <p><a href="https://guingamp.uco.fr/fr">Université Catholique de l'Ouest (UCO) - Guingamp</a><br/>Licence de Biologie, Parcours Biologie Cellulaire et Physiologie<br/><em>2006-2009</em></p>
+                </div>
+                <div id="ubo">
+                    <div class="logo"><img src="Image/Logo/UBO.jpg" alt="logo UBO"/></div>
+                    <p><a href="https://www.univ-brest.fr/medecine/">Faculté de Médecine de Brest</a><br/>Premier Cycle Elémentaire de médecine<br/><em>2004 - 2006</em></p>
+                </div>
+                <div id="fld">
+                    <div class="logo"><img src="Image/Logo/Felix.jpg" alt="logo Felic Le Dantec"/></div>
+                    <p><a href="http://lycee-ledantec.fr/">Lycée Félix LeDantec - Lannion</a><br/>Bac S option maths, mention AB<br/><em>2004</em></p>
+                </div>
+            </div>
+            <hr id="xp">
+            <div id="exp">
+                <h2>Expériences professionnelles</h2>
+                    <details id="prog" closed="open">
+                    <summary>Travaux personnels : développement d'applications mobiles - 2019</summary>
+                        <div>
+                            <article>
+                                <h4>Initiation autodidacte à la programmation</h4>
+                                <p>Développement d'applications et de jeux mobiles et tactiles, en Lua.</p>
+                            <div id="screen">
+                                <div id="slider">
+                                    <div id="slides">
+                                        <figure id="slide1">
+                                            <img src="Image/JDLV.gif" width=500px alt="Le Jeu De La Vie">
+                                        </figure>
+                                        <figure id="slide1">
+                                            <img src="Image/arpg.gif" width=500px alt="Un action-rpg style snes">
+                                        </figure>
+                                        <figure id="slide2">
+                                            <img src="Image/space.gif" width=500px alt="un space shooter">
+                                        </figure>
+                                        <figure id="slide3">
+                                            <img src="Image/p4.gif"width=500px  alt="Une adaptation de Puissance 4">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="pp">C'est par <strong>curiosité</strong>, que je me suis mis à la programmation d'applications. Cela faisait longtemps que j'avais <strong>envie d'apprendre</strong> à programmer, et ça m'a très vite beaucoup plu. C'est dont en total <strong>autonomie</strong> que je me suis mis à developper de petites applications, très simples au début, puis de plus en plus élaborées</p>
+                            </article>
+                        </div></details><br>
+                    <details id="asen" closed="open">
+                    <summary>Assistant d'éducation 2012 - 2018</summary>
+                        <div class="logo"><img src="Image/Logo/logopavie.jpg" style="margin-left:10px;"/></div>
+                        <article>
+                            <p>Alors que ce n'était au début qu'un job étudiant, j'ai rapidement découvert un métier extrèmement enrichissant. C'était assez inhabituel pour moi car je n'avais encore jamais travailler avec des adolescents.<br>Voici, entre autres, quelques unes des missions qui m'ont été confiées :</p>
+                                <ul>
+                                    <li>Accueillir et veiller à la bonne intégration des élèves du lycée, les encadrer sur le temps scolaire (assiduité, résultats scolaire, discipline), et lors des sorties.</li>
+                                    <li>En internat : aide aux devoirs, animation d'activités, gestion des conflits, rappels des règles de vie en communauté...</li>
+                                    <li>Assurer le lien entre l'équipe pédagogique, les élèves, et les parents d'élèves.</li>
+                                    <li>Secrétaire de jurys de bac, et des réunions de l'équipe de Vie Scolaire.</li>
+                                </ul>
+                                <p class="pp">Si les premiers temps furent parfois difficiles avec les élèves, j'ai néanmoins su faire preuve d'<strong>adaptation</strong>.
+                                Ce fut l'occasion pour moi de travailler mes compétences relationnelles et la <strong>pédagogie</strong>, essentielles auprès d'un jeune public, et d'acquerir un certain <strong>sens des responsabilités</strong>.</p>
+                        </article>
+                        </details><br>
+                    <details id="lab" closed="open">
+                    <summary>Chargé de recherche / Technicien de Laboratoire</summary>
+                        <div id="lab3">
+                            <div class="logo"><img src="Image/Logo/UCO.png" alt="logo UCO" style="margin-top:20px;margin-left:20px;"/></div>
+                            <article><br/>
+                                <h4>Travail d'étude - 2008-09 (5 mois)</h4>
+                                <p>Elaboration d'un protocole d'analyse génétique des parasites de la coque <em>Cerastoderma Edule</em>.</p>
+                                <p>Ce projet m'a été confié dans le cadre de la dernière année de Licence de Biologie. 
+                                C'était assez ambitieux car nécessitant des connaissances avancées en génétique. D'autre part, ce travail répondait à un réel besoin et devait permettre un gain de temps sur l'identification des espèces parasites.
+                                Ce fut l'occasion pour moi de mettre en pratique des techniques de biologie moléculaire de manipulation d'ADN.</p>
+                                <p class="pp">La conception de ce protocole a nécessité une <strong>recherche bibliographique</strong> préalable, beaucoup de <strong>persévérence</strong> face aux problèmes rencontrés, et un certain <strong>esprit critique</strong> vis-à-vis du travail effectué.</p>
+                            </article>
+                            <button type="button" onclick="alert('RESUME\nLa coque Cerastoderma edule est un animal très parasité. C’est de plus un élément important de l’écosystème de la baie de St Brieuc, tout comme ses parasites que l’on retrouve dans de nombreuses autres espèces. L’évolution des populations des parasites de la coque est donc un paramètre important pouvant être révélateur de dérèglements (climatique, toxicologique…) qu’il faut suivre avec attention. Ce suivi passe par un recensement méticuleux qui ne peut se faire que par observation à la loupe binoculaire. \nC’est dans cette optique que le travail d’étude s’est déroulé : nous avons cherché à mettre au point un protocole d’extraction et d’amplification de l’ADN permettant l’identification des parasites présents dans les coques. Deux protocoles d’extraction d’ADN ont été testés, suivis d’une amplification par PCR de l’ADNr 5,8S des parasites en utilisant des amorces spécifiques de la famille des Trématodes digéniens. Cette amplification est suivie d’une électrophorèse permettant en théorie de distinguer l’ADN provenant des différentes espèces de parasites en s’intéressant à la longueur des produits PCR : c’est la technique dite de Restriction Fragments Lenght Polymorphism (RFLP). En pratique, la présence d’ADN d’origine parasitaire amplifié a pu être mis en évidence mais l’identification n’a pas pu être effectué en raison de problèmes techniques.\nMots-clefs : Cerstoderma edule, Trematoda digenea, ARNr 5,8S, extraction d’ADN, PCR, electrophorèse, RFLP. ')">+ de détails</button>
+                        </div><hr>
+                        <div id="lab2">
+                        <div class="logo"><img src="Image/Logo/LOGOmorvan.jpg" alt="logo CHRU Morvan" width=100px style="margin-top:20px;"/></div>
+                        <article>
+                            <h4>Stage en génie génétique - 2008 (1 mois)</h4>
+                            <p>Etude de la conformation de protéines membranaires impliquées dans certaines lymphopathies myéloïdes.</p>
+                            <p>Ce stage a été effectué dans le cadre de la deuxième année de Licence de Biologie. C'était une expérience formidable car elle m'a permis de travailler en équipe au sein d'un laboratoire de recherche en génétique.</p>
+                            <p class="pp">A cette occasion j'ai pu voir, apprendre et pratiquer certaines techniques de pointes de génie génétique (extraction d'ADN, PCR, RFLP), ainsi que travailler à la <strong>résolution de problèmes complexes</strong>, telles que la conception de cartes de restriction génétique, et me familiariser avec la <strong>rédaction de documents et de rapports</strong>.<br></p>
+                        </article>
+                            <button type="button" onclick="alert('RESUME\nLes récepteurs Fc\u03b3RII constituent un groupe de trois récepteurs membranaires présents sur certains leucocytes et capables de fixer les IgG. Ils interviennent de manière significative dans l’évolution de la réponse immunitaire et la prolifération cellulaire. Si les conséquences fonctionnelles de ces récepteurs sont relativement bien connues, les mécanismes moléculaires qui en sont responsables et les différentes formes de Fc\u03b3RII présentes dans les cellules cancéreuses restent à l’étude. \nC’est dans cette optique que travaille le laboratoire dans lequel le stage s’est déroulé. Une extraction d’ARN suivie d’une transcription inverse et d’une réaction de polymérisation en chaîne de l’ADNc codant pour la β-actine a pu être réalisée. Puis, la présence de cette protéine a été mise en évidence dans plusieurs lignées de cellules cancéreuses par la méthode de Western-Blot. Ensuite, nous avons sous- cloné l’ADNc codant pour le récepteur Fc\u03b3RIIb2 dans un plasmide d’expression : une ligation de l’insert dans le plasmide a tout d’abord été réalisée puis une transformation bactérienne suivie d’une amplification et d’une analyse des clones recombinants. Enfin, l’orientation dans les plasmides des ADNc codant pour les Fc\u03b3RIIa et Fc\u03b3RIIb2 a pu être déterminée par digestion par des enzymes de restriction et électrophorèse. Nous avons ainsi pu observer que contrairement à l’ADNc de Fc\u03b3RIIa dont l’orientation semblait se faire aléatoirement, l’insertion de l’ADNc de Fc\u03b3RIIb2 ne se faisait que dans un seul sens.\nMots-clefs : Western-Blot, extraction d’ARN, Transcription inverse, PCR, Transformation bacterienne, ligation, cartographie de restriction')">+ de détails</button>
+                        </div><hr>
+                        <div id="lab1">
+                            <div class="logo"><img src="Image/Logo/logoPLD.png" alt="logo CH Lannion" style="margin-left:30px;"/></div>
+                            <article>
+                                <h4>Stage analyse biomédicale - 2007 (2 semaines)</h4>
+                                <p>Réalisation des différentes techniques pratiquées en laboratoire d'analyse médicale</p>
+                                <p>
+                                <p>Ce stage m'a permis de voir et pratiquer les techniques de routines en analyse biomédicales telles que  : numération et formule sanguine, ELISA, antibiogramme...</p>
+                                <p class="pp">Pour ce genre de tâches, le <strong>soucis du détail</strong> et la minutie sont de rigueur. Cela m'a également permis de <strong>travailler en équipe</strong> en laboratoire pour la première fois.</p>
+                            </article>
+                        </div><hr>
+                    </details><br>
+                    <details id="sante" closed="open">
+                    <summary>Expériences diverses dans le domaine médical</summary>
+                        <div>
+                            <div class="logo"><img src="Image/Logo/Logo_pharm.png" width=60px height=60px>
+                            </div>
+                            <h4>Préparateur en pharmacie (stage de 2 semaines)</h4>
+                            <p>Gestion de stocks, préparation de commandes, confection de pommades</p>
+                        </div><hr>
+                        <div>
+                            <div class="logo"><img src="Image/Logo/Logo_amb.png" width=60px height=60px>
+                            </div>
+                            <h4>Ambulancier (stage de 2 semaines)</h4>
+                            <p>Prise en charge des patiens à domicile et à l'hôpital, conduite d'ambulance</p>
+                        </div><hr>
+                        <div>
+                            <div class="logo"><img src="Image/Logo/Logo_as.jpg" width=60px height=60px>
+                            </div>
+                            <h4>Remplacement d'aide-soignants (job d'été - 6 mois)</h4>
+                            <p>Aide aux actes de la vie quotidienne, réalisations de soins</p>
+                        </div>
+                    </details>
+                </div><br><br>
+            <hr id="atout">
+            <div id = "atouts">
+                <h2>Atouts</h2><br>
+                <article>
+                    <h3>Compétences techniques</h3>
+                    <ul>
+                        <li id="lang">Languages : HTML, CSS, JavaScript, PHP, Lua</li>
+                        <li id="bdd">Gestion de base de données SQL</li>
+                        <li id="cnil">Attestation RGPD de la CNIL</li>
+                        <li id="ang">Anglais scientifique et technique</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Compétences transversales</h3>
+                    <ul>
+                        <li>Raisonnement analytique</li>
+                        <li>Trouver des solutions innovantes</li>
+                        <li>Soucis des collaborateurs</li>
+                        <li>Capacité d'adaptation</li>
+                    </ul>
+                </article>
+        </div><br><hr>
+            <div id="hobbies">
+                <h2 id="hob">Centres d'intérêt</h2>
+                <div>
+                    <div class="hobgr">
+                        <img src="Image/Icon/iconJV.JPG" alt="Icone de Jeu Video">
+                        <img src="Image/Icon/Iconguitar.png" alt="Icone de guitare">
+                    </div>
+                    <div class="hobgr">
+                        <img src="Image/Icon/logocanivtt.png" alt="Icone de caniVTT">
+                        <img src="Image/Icon/iconmetal.JPG" alt="Icone de Heavy Metal">
+                    </div>
+                </div>
 
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        © 2020 - Jean-Yves CUDONNEC
+    </div>
 
 </body>
 </html>
