@@ -47,7 +47,7 @@ h1{
   background: #333;
   background-image:url(Image/head.jpg);
   background-size:cover;
-    background-position: 60% 30%;
+    background-position: 70% 30%;
   color: white;
     height:200px;
 }
@@ -182,7 +182,7 @@ h1{
     border-radius: 20px 20px;
     width : 100%;
     margin : auto;
-    padding : 0px;
+    padding : 0px 5px;
 }
 .side p{
     background-color: #3B5770;
