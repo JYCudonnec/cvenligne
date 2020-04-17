@@ -124,7 +124,7 @@ h1{
   flex-wrap: wrap;
 }
 .row:hover{
-    display : block;
+    background-color: black;
 }
 
 /* 2 Colonnes côte a côte qui peuvent se superposer */
