@@ -123,8 +123,8 @@ h1{
   display: flex;
   flex-wrap: wrap;
 }
-.row:hover{
-    background-color: black;
+.side:hover, .main:hover{
+    background-color: antiquewhite;
 }
 
 /* 2 Colonnes côte a côte qui peuvent se superposer */
