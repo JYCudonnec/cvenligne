@@ -123,6 +123,9 @@ h1{
   display: flex;
   flex-wrap: wrap;
 }
+.row:hover{
+    display : flex;
+}
 
 /* 2 Colonnes côte a côte qui peuvent se superposer */
 
@@ -471,9 +474,7 @@ button:hover{
   .row, .navbar {   
     flex-direction: column;
   }
-    .row:hover{
-        
-    }
+
     .navbar a{
         width:100%;
     }
